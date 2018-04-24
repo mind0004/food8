@@ -1,0 +1,80 @@
+/* GLOBAL */
+
+body {
+    background-color: #f3e5f5;
+}
+
+
+/*TOPPEN*/
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+#menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin: 10px;
+
+    background-color: #edc0f4;
+    border: 1px solid #ab47bc;
+    padding: 8px;
+}
+
+#so_me {
+    max-width: 70px;
+    min-width: 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin: 10px;
+}
+
+nav {
+    font-size: 10px;
+}
+
+/* CONTENT */
+
+#info {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#omfood8 {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* FOOTER */
+
+#footergrid {
+    height: 50px;
+}
+
+#footercontent {
+    align-items: flex-end;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin: 10px;
+
+    background-color: #edc0f4;
+    border: 1px solid #ab47bc;
+    padding: 8px;
+}
+
+/* MEDIAQUERYS */
+
+@media screen and (min-width: 627px) and (orientation: landscape) {
+    #modtager {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        margin: 10px;
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page</title>
+</head>
+
+<body>
+
+    <nav data-menu></nav>
+
+    <section id="modtager">
+
+        <article>
+            <h2 data-navn></h2>
+            <p data-tekst></p>
+        </article>
+    </section>
+
+    <script src="menu.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", hentJson);
+
+        async function hentJson() {
+
+            var urlParams = new URLSearchParams(window.location.search);
+            let id = urlParams.get("restaurant");
+
+            let jsonObjekt = await fetch("http://mikkelhein.dk/kea/food8/wordpress/wp-json/wp/v2/posts/" + id);
+
+            let single = await jsonObjekt.json();
+
+            document.querySelector("[data-navn]").innerHTML = single.title.rendered;
+            document.querySelector("[data-tekst]").innerHTML = single.content.rendered;
+
+        }
+    </script>
+</body>
+
+</html>

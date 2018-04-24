@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food8</title>
+    <link rel="stylesheet" href="">
+</head>
+<section id="modtager"></section>
+<template id="myTemplate">
+    <article>
+        <h2 data-navn></h2>
+        <p data-type></p>
+        <img src="" data-billede>
+        <p data-tekst></p>
+    </article>
+</template>
+
+<body>
+    <script>
+        let posts;
+        let minTemplate = document.querySelector("#myTemplate");
+
+
+        async function hentJson() {
+            let jsonObjekt = await fetch("http://mikkelhein.dk/kea/food8/wordpress/wp-json/wp/v2/posts");
+
+            posts = await jsonObjekt.json();
+
+            visPosts();
+        }
+
+        function visPosts() {
+
+            posts.forEach(element => {
+                let klon = minTemplate.cloneNode(true).content;
+                klon.querySelector("[data-navn]").textContent = element.title.rendered;
+                /*   klon.querySelector("[data-type]").textContent = element.acf.type;
+                   klon.querySelector("[data-billede]").scr = element.acf.foto;
+                   klon.querySelector("[data-tekst]").textContent = element.content.rendered;*/
+                document.querySelector("#modtager").appendChild(klon);
+
+            })
+
+            document.addEventListener("DOMContetLoaded", hentJson);
+        }
+    </script>
+</body>
+
+</html>
