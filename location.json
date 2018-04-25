@@ -1,0 +1,69 @@
+[
+    {
+        "position": {
+            "lat": 55.684049,
+            "lng": 12.569464
+        },
+        "title": "Cleaver's Meat Market",
+        "icon": "food8_imgs/location_icons/Meat-Market_logo.png"
+ },
+    {
+        "position": {
+            "lat": 55.669088,
+            "lng": 12.558720
+        },
+        "title": "Fleich",
+        "icon": "food8_imgs/location_icons/fleisch.png"
+ },
+    {
+        "position": {
+            "lat": 55.683928,
+            "lng": 12.570082
+        },
+        "title": "Un Mercato",
+        "icon": "food8_imgs/location_icons/unmercato.png"
+ },
+    {
+        "position": {
+            "lat": 55.669184,
+            "lng": 12.560794
+        },
+        "title": "Spisehuset",
+        "icon": "food8_imgs/location_icons/Spisehuset.png"
+ },
+    {
+        "position": {
+            "lat": 55.666611,
+            "lng": 12.579911
+        },
+        "title": "The Fat Pike",
+        "icon": "food8_imgs/location_icons/The-Fat-Pike.png"
+ },
+    {
+        "position": {
+            "lat": 55.688250,
+            "lng": 12.561815
+        },
+        "title": "Rødder &amp; Vin",
+        "icon": "food8_imgs/location_icons/rodderogvin.png"
+},
+
+    {
+        "position": {
+            "lat": 55.667643,
+            "lng": 12.558010
+        },
+        "title": "NOHO",
+        "icon": "food8_imgs/location_icons/NOHO-60x60.png"
+}, {
+        "position": {
+            "lat": 55.695038,
+            "lng": 12.569340
+        },
+        "title": "Metier",
+        "icon": "food8_imgs/location_icons/metier.png"
+}
+
+
+
+]
