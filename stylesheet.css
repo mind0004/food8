@@ -104,23 +104,28 @@ nav {
     background-color: #edc0f4;
     border: 1px solid #ab47bc;
     padding: 8px;
+
 }
 
 
 /* SAERARRANGEMENT */
 
 #saerarrangementindhold {
-    background-color: #edc0f4;
+    background-color:seashell;
     margin-left: 10%;
     margin-right: 10%;
+
 }
 
 #saerarrangementtekst {
     justify-content: center;
-    margin-top: 7%;
-    margin-bottom: 7%;
-    margin-left: 4%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+
 }
+
 
 #saerarrangementnyheder {}
 
@@ -130,6 +135,7 @@ nav {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+
 }
 
 #saerrangementnyhedstekst {
