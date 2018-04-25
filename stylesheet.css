@@ -143,6 +143,24 @@ nav {
     vertical-align: middle;
 }
 
+#food8billeder {
+    vertical-align: middle;
+    align-items: flex-end;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding: 20px;
+    background-color: #f4efe3;
+}
+
+#food8billeder  {
+    margin: 5px;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
 
 /* FOOTER */
 
@@ -187,7 +205,12 @@ nav {
     color: #3d3d3d;
 }
 
+/*geolocation*/
 
+#map{
+    height: 400px;
+    width: 100%;
+}
 /* SAERARRANGEMENT */
 
 #saerarrangementindhold {
