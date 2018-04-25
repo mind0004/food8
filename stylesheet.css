@@ -42,7 +42,6 @@ body {
 
 /*BURGER MENU SLUT*/
 
-
 /*TOPPEN*/
 
 #logo {
@@ -87,6 +86,7 @@ nav {
     text-align: center;
     vertical-align: middle;
 }
+
 
 
 /* FOOTER */
@@ -144,6 +144,17 @@ nav {
     margin-right: 7%;
     padding-bottom: 4%;
 }
+
+/* STEDER - RESTAURANTER */
+
+.link-more {
+    display: none;
+}
+
+
+
+
+
 
 
 /* MEDIAQUERYS */
