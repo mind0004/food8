@@ -10,45 +10,34 @@
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> </head>
 
-<body>
-
-
-    <button id="bookBtn" class="bookBord">Book Bord</button>
-
-    <div id="bookModal" class="modalBook">
-
-
-        <div class="modal-contentBook">
-            <span class="closeBook">&times;</span>
-            <iframe class="bookingsystem" width="350" height="623" src="https://xd.adobe.com/embed/7196496b-7f93-4d91-584a-85546512ee43-07a7/" frameborder="0" allowfullscreen></iframe>
-        </div>
-
-    </div>
-
-
-
-
-
-    <img id="logo" src="food8_imgs/logo.png" alt="logo" center>
+<body> <img id="logo" src="food8_imgs/logo.png" alt="logo" center>
     <div id="menu">
         <button class="tilmeld">Tilmeld Nyhedsbrev</button>
         <div id="so_me">
             <a href="https://www.facebook.com/search/top/?q=food8"><img src="food8_imgs/facebook_icon.png"></a>
             <a href="https://www.instagram.com/food8dk/"><img src="food8_imgs/instagram_icon.png"></a>
         </div>
-        <!--    DROPDOWN MENU START-->
-        <div id="burgermenu" data-burgermenu>
-            <button class="burger">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </button>
-        </div>
-        <div id="burgerlinks" data-burgerlinks> <a href="forside.html">FORSIDE</a> <a href="saerarrangementer.html">SAERARRANGEMENTER</a> <a href="food8.html">MAD - STEDER</a>
-            <br> <a href="guides.html">GUIDES</a>
-            <br> <a href="om.html">OM FOOD8</a> </div>
-        <!--    DROPDOWN MENU SLUT-->
     </div>
+    <!--    DROPDOWN MENU START-->
+    <div class="navbar">
+        <div class="dropdown">
+            <!--      <button onclick="myFunction()" class="dropbtn">Dropdown</button>-->
+            <button onclick="myFunction()" class="dropbtn">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="https://www.dr.dk/">FORSIDE</a>
+                <a href="https://www.dr.dk/">SÆRARRANGEMENTER</a>
+                <a href="https://www.dr.dk/">MAD - STEDER</a>
+                <a href="https://www.dr.dk/">GUIDES</a>
+                <a href="https://www.dr.dk/">OM FOOD8</a>
+            </div>
+        </div>
+    </div>
+    <!--    DROPDOWN MENU SLUT-->
+
 
     <section id=food8>
 
@@ -93,33 +82,8 @@
         </div>
     </footer>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZlHGVaWJR3OH6btjG1joAcDH1hS9LJZI&callback=initMap">
-    </script>
-    <script>
-        // Get the modal
-        var modal = document.getElementById('bookModal');
 
-        // Get the button that opens the modal
-        var btn = document.getElementById("bookBtn");
 
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("closeBook")[0];
-
-        // When the user clicks the button, open the modal
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modalBook) {
-                modal.style.display = "none";
-            }
-        }
     </script>
     <script src="menu.js"></script>
     <script src="location.js"></script>
