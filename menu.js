@@ -5,8 +5,6 @@ async function hentMenu() {
     let menufil = await fetch("menu.html");
     let menu = await menufil.text();
 
-    document.querySelector("[data-burgermenu]").innerHTML = menu;
-    document.querySelector("[burgerlinks]").innerHTML = menu;
 }
 
 // BURGER MENU START */
