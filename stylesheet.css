@@ -153,14 +153,10 @@ nav {
     background-color: #f4efe3;
 }
 
-#food8billeder  {
-    margin: 5px;
-    padding: 20px;
-    background: white;
-    text-align: center;
-    vertical-align: middle;
+#food8billeder img {
+    width: auto;
+    height: 90;
 }
-
 
 /* FOOTER */
 
