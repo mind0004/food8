@@ -8,88 +8,50 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> </head>
 
-    <style>
-        #map {
-            height: 400px;
-            width: 100%;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        #burgermenu {
-
-            border: none;
-            text-align: center;
-            justify-content: right;
-            justify-items: center;
-        }
-
-        #burgerlinks {
-            position: relative;
-            right: -385px;
-            text-align: right;
-            z-index: 1;
-        }
-    </style>
-</head>
-
-<body>
-
-    <img id="logo" src="food8_imgs/logo.png" alt="logo" center>
-
+<body> <img id="logo" src="food8_imgs/logo.png" alt="logo" center>
     <div id="menu">
-
         <button class="tilmeld">Tilmeld Nyhedsbrev</button>
-
         <div id="so_me">
-            <a href="https://www.facebook.com/search/top/?q=food8"><img src="food8_imgs/facebook_icon.svg"></a>
-            <a href="https://www.instagram.com/food8dk/"><img src="food8_imgs/instagram_icon.svg"></a>
+            <a href="https://www.facebook.com/search/top/?q=food8"><img src="food8_imgs/facebook_icon.png"></a>
+            <a href="https://www.instagram.com/food8dk/"><img src="food8_imgs/instagram_icon.png"></a>
         </div>
         <!--    DROPDOWN MENU START-->
-
         <div id="burgermenu" data-burgermenu>
             <button class="burger">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </button>
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </button>
         </div>
-        <div id="burgerlinks" data-burgerlinks>
-            <a href="forside.html">FORSIDE</a>
-            <a href="saerarrangementer.html">SAERARRANGEMENTER</a>
-            <a href="food8.html">MAD - STEDER</a><br>
-            <a href="guides.html">GUIDES</a><br>
-            <a href="om.html">OM FOOD8</a>
-        </div>
+        <div id="burgerlinks" data-burgerlinks> <a href="forside.html">FORSIDE</a> <a href="saerarrangementer.html">SAERARRANGEMENTER</a> <a href="food8.html">MAD - STEDER</a>
+            <br> <a href="guides.html">GUIDES</a>
+            <br> <a href="om.html">OM FOOD8</a> </div>
         <!--    DROPDOWN MENU SLUT-->
     </div>
-
     <div id="omfood8">
         <p>Food8 er en restaurationsgruppe af individuelle restauratører der har slået sig sammen. Her kan man gå på opdagelse blandt kendte og ukendte restauranter, madbutikker og barer – eller det, som vi ganske enkelt kalder steder.</p>
     </div>
     <!--GEOLOCATION - MAP START-->
     <div id="map"></div>
     <!--GEOLOCATION - MAP SLUT-->
-
     <footer id="footergrid">
         <div id="footercontent">
-
-            <p>Kontakt - info - strøm</p>
-
-            <div id="so_me">
-                <a href="https://www.facebook.com/search/top/?q=food8"><img src="food8_imgs/facebook_icon.svg"></a>
-                <a href="https://www.instagram.com/food8dk/"><img src="food8_imgs/instagram_icon.svg"></a>
+            <p> info@food8.dk </p>
+            <p>
+                <br> Food8 ApS — Langelinie 10, 2100 København
+                <br>CVR nr. 39306999</p>
+            <div id="strom">
+                <a href="http://stromworks.com"><img src="food8_imgs/str%C3%B8m.png"></a>
             </div>
-
+            <div id="so_me">
+                <a href="https://www.facebook.com/search/top/?q=food8"><img src="food8_imgs/facebook_icon.png"></a>
+                <a href="https://www.instagram.com/food8dk/"><img src="food8_imgs/instagram_icon.png"></a>
+            </div>
             <button class="tilmeld">LOGIN</button>
-
         </div>
     </footer>
-
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZlHGVaWJR3OH6btjG1joAcDH1hS9LJZI&callback=initMap">
     </script>
     <script src="menu.js"></script>
