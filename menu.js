@@ -1,11 +1,11 @@
+window.addEventListener("load", hentMenu);
+
 async function hentMenu() {
 
     let menufil = await fetch("menu.html");
     let menu = await menufil.text();
 
 }
-
-window.addEventListener("load", hentMenu);
 
 // BURGER MENU START */
 document.querySelector(".burger").addEventListener("click", toggleMenu);
