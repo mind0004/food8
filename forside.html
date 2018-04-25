@@ -10,7 +10,26 @@
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> </head>
 
-<body> <img id="logo" src="food8_imgs/logo.png" alt="logo" center>
+<body>
+
+
+    <button id="bookBtn" class="bookBord">Book Bord</button>
+
+    <div id="bookModal" class="modalBook">
+
+
+        <div class="modal-contentBook">
+            <span class="closeBook">&times;</span>
+            <iframe class="bookingsystem" width="350" height="623" src="https://xd.adobe.com/embed/7196496b-7f93-4d91-584a-85546512ee43-07a7/" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+    </div>
+
+
+
+
+
+    <img id="logo" src="food8_imgs/logo.png" alt="logo" center>
     <div id="menu">
         <button class="tilmeld">Tilmeld Nyhedsbrev</button>
         <div id="so_me">
@@ -33,23 +52,23 @@
 
     <section id=food8>
 
-    <div id="omfood8">
-        <p>Food8 er en restaurationsgruppe af individuelle restauratører der har slået sig sammen. Her kan man gå på opdagelse blandt kendte og ukendte restauranter, madbutikker og barer – eller det, som vi ganske enkelt kalder steder.</p>
+        <div id="omfood8">
+            <p>Food8 er en restaurationsgruppe af individuelle restauratører der har slået sig sammen. Her kan man gå på opdagelse blandt kendte og ukendte restauranter, madbutikker og barer – eller det, som vi ganske enkelt kalder steder.</p>
 
-         </div>
+        </div>
 
         <h1> Nyheder</h1>
         <div id="food8billeder">
-        <img id="nohoforside" src="forsidebilleder/argnohoforside.jpg">
-        <p>NOHO har fået nye sommer cocktails på menuen, så kig forbi og sid i smukke omgivelser, imens bartenderne shaker cocktails til dig og dine venner. Du kan nyde solen og få den bedste aften på NOHO.</p>
+            <img id="nohoforside" src="forsidebilleder/argnohoforside.jpg">
+            <p>NOHO har fået nye sommer cocktails på menuen, så kig forbi og sid i smukke omgivelser, imens bartenderne shaker cocktails til dig og dine venner. Du kan nyde solen og få den bedste aften på NOHO.</p>
 
-         <img id="rogvforside" src="forsidebilleder/rogvinangforside.jpg">
-          <p>Rødder og vin slår dørene op for en aftne med biodynamiske vine, som giver dig den bedste guide på hvilket biodynamiske vine som du kan få fingerne i henover sommeren.</p>
+            <img id="rogvforside" src="forsidebilleder/rogvinangforside.jpg">
+            <p>Rødder og vin slår dørene op for en aftne med biodynamiske vine, som giver dig den bedste guide på hvilket biodynamiske vine som du kan få fingerne i henover sommeren.</p>
 
-<img id="tfpforside" src="forsidebilleder/tfpargforside.jpg">
-         <p>Er du glad for østers? så tilbyder The Fat pike en aftne med danske østers på menuen, i gennem aftenen vil du kunne smage på op til 5 forskellige slags danske østers, som er kommet direkte ind af døren</p>
+            <img id="tfpforside" src="forsidebilleder/tfpargforside.jpg">
+            <p>Er du glad for østers? så tilbyder The Fat pike en aftne med danske østers på menuen, i gennem aftenen vil du kunne smage på op til 5 forskellige slags danske østers, som er kommet direkte ind af døren</p>
 
-           </div>
+        </div>
 
     </section>
 
@@ -74,6 +93,33 @@
         </div>
     </footer>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZlHGVaWJR3OH6btjG1joAcDH1hS9LJZI&callback=initMap">
+    </script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('bookModal');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("bookBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("closeBook")[0];
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modalBook) {
+                modal.style.display = "none";
+            }
+        }
     </script>
     <script src="menu.js"></script>
     <script src="location.js"></script>
