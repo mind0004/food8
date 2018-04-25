@@ -28,10 +28,11 @@ function visPosts() {
 
         klon.querySelector("[data-navn]").innerHTML = element.title.rendered;
         //klon.querySelector("[data-type]").textContent = element.acf.fugletype;
-        klon.querySelector("[data-tekst]").innerHTML = element.content.rendered;
+        klon.querySelector("[data-tekst]").innerHTML = element.excerpt.rendered;
         //klon.querySelector("[data-billede]").src = element.featured_media;
 
         klon.querySelector("[data-single]").href = "single.html?restaurant=" + element.id;
+        klon.querySelector("[data-readmore]").href = "single.html?restaurant=" + element.id;
 
         document.querySelector("#modtager").appendChild(klon);
 
