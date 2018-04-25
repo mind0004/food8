@@ -39,7 +39,6 @@ body {
     font-size: 16px;
     border: none;
     cursor: pointer;
-
 }
 
 .dropbtn:hover,
@@ -59,7 +58,7 @@ body {
     background-color: #f1f1f1;
     min-width: 160px;
     overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px #3d3d3d;
     right: 0;
     z-index: 1;
 }
@@ -69,7 +68,7 @@ body {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
 .dropdown a:hover {}
@@ -78,7 +77,9 @@ body {
     display: block;
 }
 
+
 /*BURGER MENU SLUT*/
+
 
 /*KNAPPER*/
 
@@ -96,6 +97,20 @@ body {
     -webkit-box-shadow: 2px 4px 40px rgba(0, 0, 0, .2);
 }
 
+.tilmeldforside {
+    background-color: #9bd5c4;
+    height: 40px;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 1%;
+    -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 2px 4px 40px rgba(0, 0, 0, .2);
+}
+
 
 /*Typografi*/
 
@@ -108,6 +123,12 @@ h2 {
     color: #3d3d3d;
 }
 
+h1 {
+    font-family: Montserrat;
+    color: #3d3d3d;
+    text-align: center;
+}
+
 p {
     font-family: 'Cormorant Garamond', serif;
     font-size: 20px;
@@ -116,12 +137,25 @@ p {
 
 /*TOPPEN*/
 
+.dropbtn {
+    background-color: white;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    background-color: #5c6671;
+}
+
+#myDropdown {
+    background-color: white;
+}
+
 #logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 30%;
-    ;
     height: auto;
 }
 
@@ -137,7 +171,6 @@ p {
 #so_me img {
     height: auto;
     width: 30px;
-    ;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
@@ -145,6 +178,11 @@ p {
     border-radius: 1%;
     -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 2px 4px 40px rgba(0, 0, 0, .2);
+}
+
+#so_me {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 nav {
@@ -163,14 +201,19 @@ nav {
     vertical-align: middle;
     align-items: flex-end;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
-    padding: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
     background-color: #f4efe3;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 #omfood8 p {
-    margin: 5px;
+    height: 200px;
     padding: 20px;
     background: white;
     text-align: center;
@@ -179,20 +222,38 @@ nav {
 
 #food8billeder {
     vertical-align: middle;
-    align-items: flex-end;
+    align-items: end;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
-    padding: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
     background-color: #f4efe3;
+    text-align: center;
 }
 
 #food8billeder img {
-    width: auto;
-    height: 90;
+    height: auto;
+    width: 60%;
+    margin-left: 15px;
 }
 
+#food8billeder p {
+    margin-right: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: white;
+}
+
+#food8billeder h1 {
+    text-align: center;
+}
+
+
 /* FOOTER */
+
 
 /* FOOTER */
 
@@ -234,12 +295,14 @@ nav {
     color: #3d3d3d;
 }
 
+
 /*geolocation*/
 
 #map {
     height: 400px;
     width: 100%;
 }
+
 
 /* SAERARRANGEMENT */
 

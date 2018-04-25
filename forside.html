@@ -12,55 +12,40 @@
 
 <body> <img id="logo" src="food8_imgs/logo.png" alt="logo" center>
     <div id="menu">
-        <button class="tilmeld">Tilmeld Nyhedsbrev</button>
+        <button class="tilmeldforside">Tilmeld Nyhedsbrev</button>
         <div id="so_me">
-            <a href="https://www.facebook.com/search/top/?q=food8"><img src="food8_imgs/facebook_icon.png"></a>
+            <a href="https://www.facebook.com/search/top/?q=food8"><img src="food8_imgs/facebook_icon.png"> </a>
             <a href="https://www.instagram.com/food8dk/"><img src="food8_imgs/instagram_icon.png"></a>
         </div>
-    </div>
-    <!--    DROPDOWN MENU START-->
-    <div class="navbar">
-        <div class="dropdown">
-            <!--      <button onclick="myFunction()" class="dropbtn">Dropdown</button>-->
-            <button onclick="myFunction()" class="dropbtn">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </button>
-            <div id="myDropdown" class="dropdown-content">
-                <a href="https://www.dr.dk/">FORSIDE</a>
-                <a href="https://www.dr.dk/">SÆRARRANGEMENTER</a>
-                <a href="https://www.dr.dk/">MAD - STEDER</a>
-                <a href="https://www.dr.dk/">GUIDES</a>
-                <a href="https://www.dr.dk/">OM FOOD8</a>
+        <div class="navbar">
+            <div class="dropdown">
+                <!--      <button onclick="myFunction()" class="dropbtn">Dropdown</button>-->
+                <button onclick="myFunction()" class="dropbtn">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </button>
+                <div id="myDropdown" class="dropdown-content"> <a href="forside.html">FORSIDE</a> <a href="saerarrangementer.html">SÆRARRANGEMENTER</a> <a href="food8.html">MAD - STEDER</a> <a href="om.html">OM FOOD8</a> </div>
             </div>
         </div>
     </div>
+    <!--    DROPDOWN MENU START-->
     <!--    DROPDOWN MENU SLUT-->
-
-
     <section id=food8>
-
         <div id="omfood8">
+            <h1>Om Food8</h1>
             <p>Food8 er en restaurationsgruppe af individuelle restauratører der har slået sig sammen. Her kan man gå på opdagelse blandt kendte og ukendte restauranter, madbutikker og barer – eller det, som vi ganske enkelt kalder steder.</p>
-
         </div>
-
-        <h1> Nyheder</h1>
         <div id="food8billeder">
-            <img id="nohoforside" src="forsidebilleder/argnohoforside.jpg">
+            <h2> Nyheder</h2>
+            <a href="https://food8.dk/wp-content/uploads/2018/02/COCKTAILS_SUMMER_12.04.18-kopi.pdf"><img src="forsidebilleder/argnohoforside.jpg"></a>
             <p>NOHO har fået nye sommer cocktails på menuen, så kig forbi og sid i smukke omgivelser, imens bartenderne shaker cocktails til dig og dine venner. Du kan nyde solen og få den bedste aften på NOHO.</p>
-
-            <img id="rogvforside" src="forsidebilleder/rogvinangforside.jpg">
+            <a href="https://food8.dk/nyheder/smag-paa-biodynamik/"><img src="forsidebilleder/rogvinangforside.jpg"></a>
             <p>Rødder og vin slår dørene op for en aftne med biodynamiske vine, som giver dig den bedste guide på hvilket biodynamiske vine som du kan få fingerne i henover sommeren.</p>
-
-            <img id="tfpforside" src="forsidebilleder/tfpargforside.jpg">
+            <a href="https://food8.dk/the-fat-pike/"><img src="forsidebilleder/tfpargforside.jpg"></a>
             <p>Er du glad for østers? så tilbyder The Fat pike en aftne med danske østers på menuen, i gennem aftenen vil du kunne smage på op til 5 forskellige slags danske østers, som er kommet direkte ind af døren</p>
-
         </div>
-
     </section>
-
     <!--GEOLOCATION - MAP START-->
     <div id="map"></div>
     <!--GEOLOCATION - MAP SLUT-->
@@ -82,8 +67,6 @@
         </div>
     </footer>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZlHGVaWJR3OH6btjG1joAcDH1hS9LJZI&callback=initMap">
-
-
     </script>
     <script src="menu.js"></script>
     <script src="location.js"></script>
