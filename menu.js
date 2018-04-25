@@ -1,3 +1,5 @@
+window.addEventListener("load", hentMenu);
+
 async function hentMenu() {
 
     let menufil = await fetch("menu.html");
@@ -6,8 +8,6 @@ async function hentMenu() {
     document.querySelector("[data-burgermenu]").innerHTML = menu;
     document.querySelector("[burgerlinks]").innerHTML = menu;
 }
-
-window.addEventListener("load", hentMenu);
 
 // BURGER MENU START */
 document.querySelector(".burger").addEventListener("click", toggleMenu);
