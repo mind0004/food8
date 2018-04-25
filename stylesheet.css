@@ -87,6 +87,7 @@ nav {
     vertical-align: middle;
 }
 
+<<<<<<< HEAD
 
 
 /* FOOTER */
@@ -108,6 +109,8 @@ nav {
 }
 
 
+=======
+>>>>>>> origin/master
 /* SAERARRANGEMENT */
 
 #saerarrangementindhold {
@@ -154,7 +157,26 @@ nav {
 
 
 
+<<<<<<< HEAD
 
+=======
+/* FOOTER */
+
+#footergrid {
+    height: 50px;
+}
+
+#footercontent {
+    align-items: flex-end;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin: 10px;
+    background-color: #edc0f4;
+    border: 1px solid #ab47bc;
+    padding: 8px;
+}
+>>>>>>> origin/master
 
 
 /* MEDIAQUERYS */
