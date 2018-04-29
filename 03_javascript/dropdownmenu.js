@@ -1,22 +1,25 @@
+        window.addEventListener("load", hentMenu);
+
+
         async function hentMenu() {
 
             let menufil = await fetch("menu.html");
             let menu = await menufil.text();
-
         }
-
-        window.addEventListener("load", hentMenu);
 
         // BURGER MENU START */
         document.querySelector(".dropbtn").addEventListener("click", toggleMenu);
 
+
         function toggleMenu() {
             document.querySelector(".dropbtn").classList.toggle("change");
 
-
         }
 
+        // BURGER MENU SLUT */
+
         function myFunction() {
+
             document.getElementById("myDropdown").classList.toggle("show");
         }
 
@@ -31,6 +34,7 @@
                     var openDropdown = dropdowns[i];
                     if (openDropdown.classList.contains('show')) {
                         openDropdown.classList.remove('show');
+                        document.querySelector(".dropbtn").classList.toggle("change");
                     }
                 }
             }
