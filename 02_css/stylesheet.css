@@ -428,6 +428,34 @@ nav {
     margin-top: -15px;
 }
 
+/* SINGLE PAGE */
+
+#beskrivelse {
+    border: 5px solid red;
+    margin: 20px;
+}
+
+#billedegrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+#billedegrid img {
+    max-width: 90%;
+}
+
+#mainbillede img {
+    max-width: 100%;
+}
+
+#singlefootergrid {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
 
 /* MEDIAQUERYS */
 
