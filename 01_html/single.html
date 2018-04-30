@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Single Page</title>
+    <link rel="stylesheet" href="/02_css/stylesheet.css">
 </head>
 
 <body>
@@ -48,21 +49,24 @@
     <script>
         /*document.addEventListener("DOMContentLoaded", hentJson);
 
-                async function hentJson() {
+                        async function hentJson() {
 
-                    var urlParams = new URLSearchParams(window.location.search);
-                    let id = urlParams.get("restaurant");
+                            var urlParams = new URLSearchParams(window.location.search);
+                            let id = urlParams.get("restaurant");
 
-                    let jsonObjekt = await fetch("http://mikkelhein.dk/kea/food8/wordpress/wp-json/wp/v2/posts/" + id);
+                            let jsonObjekt = await fetch("http://mikkelhein.dk/kea/food8/wordpress/wp-json/wp/v2/posts/" + id);
 
-                    let single = await jsonObjekt.json();
+                            let single = await jsonObjekt.json();
 
-                    document.querySelector("[data-navn]").innerHTML = single.title.rendered;
-                    document.querySelector("[data-tekst]").innerHTML = single.content.rendered;
+                            document.querySelector("[data-navn]").innerHTML = single.title.rendered;
+                            document.querySelector("[data-tekst]").innerHTML = single.content.rendered;
 
-                }*/
+                        }*/
 
     </script>
+    <script src="/03_javascript/bookBord.js"></script>
+    <script src="/03_javascript/dropdownmenu.js"></script>
+    <script src="/03_javascript/location.js"></script>
 </body>
 
 </html>
