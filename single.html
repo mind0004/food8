@@ -9,34 +9,58 @@
 
 <body>
 
-    <nav data-menu></nav>
+
+    <div id="mainbillede">
+        <img src="food8_imgs/NOHO/logomenu1-1024x341.jpg">
+    </div>
+
+    <div id="billedegrid">
+
+        <img src="food8_imgs/NOHO/brunchmenu1.jpg">
+        <img src="food8_imgs/NOHO/lunchmenu1.jpg">
+        <img src="food8_imgs/NOHO/eveningmenu1.jpg">
+        <img src="food8_imgs/NOHO/menudrinks1.jpg">
+
+    </div>
 
     <section id="modtager">
 
         <article>
-            <h2 data-navn></h2>
-            <p data-tekst></p>
+            <div id="beskrivelse">
+                <p><strong>"Kærlighed, god musik, fantastisk mad og lækre cocktails.Vi skal dele det hele"</strong></p><br>
+                <p>NOHO er café og spisehus i dagtimerne, et co-workingspace med 150 beboere, en restaurant og endelig en cocktailbar - beliggende midt i Kødbyem. NOHO tilbyder unik indretning og atmosfære og har som manifest at kunne tilbyde høj kvalitet og service morgen til aften.</p>
+            </div>
         </article>
     </section>
 
-    <script src="menu.js"></script>
+    <footer>
+        <div id="singlefootergrid">
+            <p><strong>Åbningstider</strong><br><br>Mandag: 8:30 - 24.00</p>
+
+            <p><strong>Adresse</strong><br><br> Flæsketorvet 28</p>
+
+            <p><strong>Kontakt</strong><br><br> +45 71 99 59 90</p>
+        </div>
+    </footer>
+
+    <!--<script src="menu.js"></script>-->
 
     <script>
-        document.addEventListener("DOMContentLoaded", hentJson);
+        /*document.addEventListener("DOMContentLoaded", hentJson);
 
-        async function hentJson() {
+                async function hentJson() {
 
-            var urlParams = new URLSearchParams(window.location.search);
-            let id = urlParams.get("restaurant");
+                    var urlParams = new URLSearchParams(window.location.search);
+                    let id = urlParams.get("restaurant");
 
-            let jsonObjekt = await fetch("http://mikkelhein.dk/kea/food8/wordpress/wp-json/wp/v2/posts/" + id);
+                    let jsonObjekt = await fetch("http://mikkelhein.dk/kea/food8/wordpress/wp-json/wp/v2/posts/" + id);
 
-            let single = await jsonObjekt.json();
+                    let single = await jsonObjekt.json();
 
-            document.querySelector("[data-navn]").innerHTML = single.title.rendered;
-            document.querySelector("[data-tekst]").innerHTML = single.content.rendered;
+                    document.querySelector("[data-navn]").innerHTML = single.title.rendered;
+                    document.querySelector("[data-tekst]").innerHTML = single.content.rendered;
 
-        }
+                }*/
 
     </script>
 </body>
